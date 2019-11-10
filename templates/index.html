@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Abuse Checker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="cal">
+        <h1>Abuse Checker</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form method="POST">
+			<input type="text" name="text" placeholder="Enter the text you wnt to check" required/>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+ 
+ 
+ {% if report %}
+ <p><strong>{{report}}</strong></p>
+ {% endif %}
+    </div>
+<div id ="Use">
+   <h2><strong>How To Use Abuse Checker </strong></h2>
+   <p> 1. Input the text you want to check. </p>
+</div>
+</body>
+
+</html>

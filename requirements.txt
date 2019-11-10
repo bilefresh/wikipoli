@@ -1,0 +1,6 @@
+gunicorn
+click==6.7
+Flask==0.12.2
+jsonify==0.5
+requests==2.18.4
+profanity-check
